@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AI音声翻訳</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI音声翻訳</h1>
+
+        <div class="card" id="japanese-card">
+            <h2>日本語 <i class="fas fa-volume-up speaker-icon" id="speaker-jp"></i></h2>
+            <div class="text-area" id="japanese-text">...</div>
+            <button class="mic-button" id="mic-jp">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <div class="swap-icon">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+
+        <div class="card" id="english-card">
+            <h2>English <i class="fas fa-volume-up speaker-icon" id="speaker-en"></i></h2>
+            <div class="text-area" id="english-text">...</div>
+            <button class="mic-button" id="mic-en">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <div class="status" id="status-text">ボタンを押して話してください</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
